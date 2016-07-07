@@ -48,27 +48,27 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="#"><span class="am-icon-home"></span>  项目仪表板</a></li>
+        <li><a href="index.html"><span class="am-icon-home"></span>  项目仪表板</a></li>
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-folder"></span>  项目 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav1">
             <li><a href="page_create.html" class="am-cf"><span class="am-icon-folder-open"></span> 创建新项目</a></li>
-            <li><a href="page_projectType.html"><span class="am-icon-shield"></span> 维护项目权限</a></li>
+            <li><a href="#"><span class="am-icon-shield"></span> 维护项目权限</a></li>
             <li>
             	<a href="#" data-am-collapse="{target: '#collapse-nav1-1'}"><span class="am-icon-building-o"></span> 维护项目合同信息<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             	<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav1-1">
-		            <li><a href="page_Type1.html"> 项目合同信息1</a></li>
-		            <li><a href="#"> 项目合同信息2</a></li>
-		            <li><a href="#"> 项目合同信息3</a></li>
+		            <li><a href="#"> 项目合同信息1</a></li>
+		            <li><a href="page_Type2.html"> 项目合同信息2</a></li>
+		            <li><a href="page_Type3.html"> 项目合同信息3</a></li>
 		          </ul>
             </li>
-            <li><a href="page_projectBudget.html"><span class="am-icon-database"></span> 维护项目预算</a></li>
+            <li><a href="#"><span class="am-icon-database"></span> 维护项目预算</a></li>
           </ul>
         </li>
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-bar-chart"></span> 进度 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-          <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav2">
-            <li><a href="page_hospitalProgress.html" class="am-cf"><span class="am-icon-stethoscope"></span>  医院入组进度</a></li>
+          <ul class="am-list am-collapse admin-sidebar-sub  am-in" id="collapse-nav2">
+            <li><a href="#" class="am-cf"><span class="am-icon-stethoscope"></span>  医院入组进度</a></li>
             <li><a href="#"><span class="am-icon-cny"></span> 付款进度</a></li>
             <li><a href="#"><span class="am-icon-dollar"></span> 其他费用</a></li>
             <li><a href="#"><span class="am-icon-align-center"></span> 其他进度</a></li>
@@ -111,122 +111,73 @@
     <div class="admin-content-body">
       <div class="am-cf am-padding am-padding-bottom-0">
         <div class="am-fl am-cf">
-          <strong class="am-text-primary am-text-lg">项目仪表板</strong> /
-          <small>Project Dashboard</small>
+          <strong class="am-text-primary am-text-lg">医院入组进度</strong> /
+          <small>Hospital Propress</small>
         </div>
       </div>
-
-      <hr/>
-
-      <div class="am-g">
-        <div class="am-u-sm-12 am-u-sm-centered">
-          <table class="am-table am-table-hover am-table-striped">
-				    <thead>
-				        <tr>
-				            <th>项目名称</th>
-				            <th>描述</th>
-				            <th>项目类型</th>
-				            <th>起止时间</th>
-				            <th>入组进度</th>
-				            <th>项目经理</th>
-				            <th>项目状态</th>
-				            <th>预算状态</th>
-				        </tr>
-				    </thead>
-				    <tbody>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				        <tr>
-				            <td>PE临床</td>
-				            <td>PE临床PE临床PE临床PE临床</td>
-				            <td>CSR</td>
-				            <td>12.3-15.9</td>
-				            <td>35/35 (1830/1800)</td>
-				            <td>ZHANG某某</td>
-				            <td>已结束</td>
-				            <td>预算内</td>
-				        </tr>
-				    </tbody>
-				  </table>
-        </div>
+			
+			<hr/>
+			
+	    <div class="am-g  am-u-lg-11" style="padding-bottom: 60px;">
+	    	<form class="am-form am-form-horizontal">
+	    			<div class="am-form-group am-form-group-sm">
+				      <label for="doc-select-1" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">项目名称 ：</label>
+				      <div class="am-u-sm-9 am-u-md-9 am-u-lg-10">
+					      <input type="text" class=" am-input-sm" id="doc-select-1">
+					    </div>
+				    </div>
+				    
+				    <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+				    
+				    <div class="am-u-sm-12 am-u-sm-centered">
+							<button type="button" class="am-btn am-btn-primary" style="margin-bottom: 20px">新增</button>
+		          <table class="am-table am-table-hover am-table-bordered">
+						    <thead>
+						        <tr>
+						            <th>试验点</th>
+						            <th>报告日期 </th>
+						            <th>预计受试者人数</th>
+						            <th>实际受试者人数</th>
+						            <th>功能</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						    </tbody>
+						  </table>
+		        </div>
+				    
+				    <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 30%;padding-left: 30px;padding-right: 30px;">保存</button>
+						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 60%;padding-left: 30px;padding-right: 30px;">取消</button>
+	    	</form>
       </div>
     </div>
   </div>

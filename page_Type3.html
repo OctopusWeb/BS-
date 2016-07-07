@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js fixed-layout">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BS Payment Tracker</title>
+  <meta name="description" content="这是一个 index 页面">
+  <meta name="keywords" content="index">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+<header class="am-topbar am-topbar-inverse admin-header">
+  <div class="am-topbar-brand">
+    <strong>BS</strong> <small>Payment Tracker</small>
+  </div>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+
+    <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+          <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
+          <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
+          <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+        </ul>
+      </li>
+      <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="am-cf admin-main">
+  <!-- sidebar start -->
+  <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+    <div class="am-offcanvas-bar admin-offcanvas-bar">
+      <ul class="am-list admin-sidebar-list">
+        <li><a href="index.html"><span class="am-icon-home"></span>  项目仪表板</a></li>
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-folder"></span>  项目 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub  am-in" id="collapse-nav1">
+            <li><a href="page_create.html" class="am-cf"><span class="am-icon-folder-open"></span> 创建新项目</a></li>
+            <li><a href="#"><span class="am-icon-shield"></span> 维护项目权限</a></li>
+            <li>
+            	<a href="#" data-am-collapse="{target: '#collapse-nav1-1'}"><span class="am-icon-building-o"></span> 维护项目合同信息<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            	<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1-1">
+		            <li><a href="page_Type1.html"> 项目合同信息1</a></li>
+		            <li><a href="page_Type2.html"> 项目合同信息2</a></li>
+		            <li><a href="#"> 项目合同信息3</a></li>
+		          </ul>
+            </li>
+            <li><a href="page_projectBudget.html"><span class="am-icon-database"></span> 维护项目预算</a></li>
+          </ul>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-bar-chart"></span> 进度 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav2">
+            <li><a href="page_hospitalProgress.html" class="am-cf"><span class="am-icon-stethoscope"></span>  医院入组进度</a></li>
+            <li><a href="#"><span class="am-icon-cny"></span> 付款进度</a></li>
+            <li><a href="#"><span class="am-icon-dollar"></span> 其他费用</a></li>
+            <li><a href="#"><span class="am-icon-align-center"></span> 其他进度</a></li>
+            <li><a href="#"><span class="am-icon-indent"></span> 预提调整</a></li>
+            <li><a href="#"><span class="am-icon-file-text-o"></span> 问题记录</a></li>
+          </ul>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-file"></span> 报表 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav3">
+            <li><a href="#" class="am-cf"><span class="am-icon-bar-chart"></span> 查看项目进度</a></li>
+            <li><a href="#"><span class="am-icon-file-archive-o"></span> 查看预提信息</a></li>
+            <li><a href="#"><span class="am-icon-copy"></span> 数据导出</a></li>
+          </ul>
+        </li>
+        <li class="admin-parent">
+          <a class="am-cf" data-am-collapse="{target: '#collapse-nav4'}"><span class="am-icon-file"></span> 主数据 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+          <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav4">
+            <li><a href="#" class="am-cf"><span class="am-icon-male"></span> 用户</a></li>
+            <li><a href="#"><span class="am-icon-plane"></span> 供应商</a></li>
+            <li><a href="#"><span class="am-icon-h-square"></span> 医院</a></li>
+            <li><a href="#"><span class="am-icon-money"></span> 费用类别及权限</a></li>
+            <li><a href="#"><span class="am-icon-gg"></span> 数据版本</a></li>
+            <li><a href="#"><span class="am-icon-balance-scale"></span> 币种及汇率</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="am-panel am-panel-default admin-sidebar-panel">
+        <div class="am-panel-bd">
+          <p><span class="am-icon-bookmark"></span> 公告</p>
+          <p>时光静好，与君语；细水流年，与君同。—— BS</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf">
+          <strong class="am-text-primary am-text-lg">项目合同信息1</strong> /
+          <small>Project Contract Type1</small>
+        </div>
+      </div>
+
+      <hr/>
+			
+			<div class="am-cf am-padding am-padding-bottom-0">
+        <blockquote>
+				  <p>项目合同信息</p>
+				  <p>类型1  按照时间进度付款</p>
+				  <p>适应范围  Theorem， Quintile，CRC service fee，CSR</p>
+				</blockquote>
+      </div>
+			
+			<hr/>
+			
+	    <div class="am-g  am-u-lg-11" style="padding-bottom: 60px;">
+	    	<form class="am-form am-form-horizontal">
+	    			<div class="am-form-group am-form-group-sm">
+				      <label for="doc-select-1" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">项目名称 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <input type="text" class=" am-input-sm" id="doc-select-1">
+					    </div>
+				      <label for="doc-select-2" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">合同名称 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <input type="text" class=" am-input-sm" id="doc-select-2">
+					    </div>
+				    </div>
+				    <div class="am-form-group am-form-group-sm">
+				      <label for="doc-select-3" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">合同编号 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <input type="number" class=" am-input-sm" id="doc-select-3">
+					    </div>
+				      <label for="doc-select-4" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">供应商名称 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <input type="text" class=" am-input-sm" id="doc-select-4">
+					    </div>
+				    </div>
+				    <div class="am-form-group am-form-group-sm ">
+				    	<label for="doc-select-5" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">开始日期 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4  am-form-icon">
+    						<input type="text" class="am-input-sm" placeholder="开始日期" data-am-datepicker readonly required />
+					     </div>
+				      <span class="am-form-caret"></span>
+				      <label for="doc-select-6" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">结束日期 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4  am-form-icon">
+    						<input type="text" class="am-input-sm" placeholder="开始日期" data-am-datepicker readonly required />
+					     </div>
+				      <span class="am-form-caret"></span>
+				    </div>
+				    <div class="am-form-group am-form-group-sm">
+				      <label for="doc-select-7" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">合同描述 ：</label>
+				      <div class="am-u-sm-9 am-u-md-9 am-u-lg-10">
+					      <input type="text" class=" am-input-sm" id="doc-select-7">
+					    </div>
+				    </div>
+				    <div class="am-form-group am-form-group-sm">
+				    	<label for="doc-select-10" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">币种 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <select id="doc-select-10" class=" am-input-sm">
+					        <option value="option1">CSR</option>
+					        <option value="option2">ISR</option>
+					        <option value="option3">ISR</option>
+					      </select>
+					     </div>
+				      <span class="am-form-caret"></span>
+				      <label for="doc-select-11" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">合同金额 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <input type="text" class=" am-input-sm" id="doc-select-11">
+					     </div>
+				      <span class="am-form-caret"></span>
+				    </div>
+				    <div class="am-form-group am-form-group-sm">
+				    	<label for="doc-select-12" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">VAT ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <input type="text" class=" am-input-sm" id="doc-select-12">
+					     </div>
+				      <span class="am-form-caret"></span>
+				      <label for="doc-select-13" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">合同总金额 ：</label>
+				      <div class="am-u-sm-3 am-u-md-3 am-u-lg-4">
+					      <input type="text" class=" am-input-sm" id="doc-select-13">
+					     </div>
+				      <span class="am-form-caret"></span>
+				    </div>
+				    
+				    <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+				    
+				    <div class="am-u-sm-12 am-u-sm-centered">
+							<button type="button" class="am-btn am-btn-primary" style="margin-bottom: 20px">新增</button>
+		          <table class="am-table am-table-hover am-table-bordered">
+						    <thead>
+						        <tr>
+						            <th>付款描述</th>
+						            <th>付款节点</th>
+						            <th>付款日期</th>
+						            <th>百分比</th>
+						            <th>币种</th>
+						            <th>付款金额</th>
+						            <th>功能</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>35/35 (1830/1800)</td>
+						            <td>ZHANG某某</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>35/35 (1830/1800)</td>
+						            <td>ZHANG某某</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>35/35 (1830/1800)</td>
+						            <td>ZHANG某某</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						        <tr>
+						            <td>第一期</td>
+						            <td>PE临床PE临床PE临床PE临床</td>
+						            <td>2015/4/1</td>
+						            <td>15%</td>
+						            <td>35/35 (1830/1800)</td>
+						            <td>ZHANG某某</td>
+						            <td>删除 编辑</td>
+						        </tr>
+						    </tbody>
+						  </table>
+		        </div>
+				    
+				    <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+						
+						<div class="am-form-group am-form-file" style="position:absolute;left: 25%;">
+						  <button type="button" class="am-btn am-btn am-btn-primary">
+						    <i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
+						  <input type="file" multiple>
+						</div>
+						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 45%;padding-left: 30px;padding-right: 30px;">保存</button>
+						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 65%;padding-left: 30px;padding-right: 30px;">取消</button>
+	    	</form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

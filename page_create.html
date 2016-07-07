@@ -53,15 +53,22 @@
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-folder"></span>  项目 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
             <li><a href="#" class="am-cf"><span class="am-icon-folder-open"></span> 创建新项目</a></li>
-            <li><a href="#"><span class="am-icon-shield"></span> 维护项目权限</a></li>
-            <li><a href="#"><span class="am-icon-building-o"></span> 维护项目合同信息</a></li>
-            <li><a href="#"><span class="am-icon-database"></span> 维护项目预算</a></li>
+            <li><a href="page_projectType.html"><span class="am-icon-shield"></span> 维护项目权限</a></li>
+            <li>
+            	<a href="#" data-am-collapse="{target: '#collapse-nav1-1'}"><span class="am-icon-building-o"></span> 维护项目合同信息<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+            	<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav1-1">
+		            <li><a href="page_Type1.html"> 项目合同信息1</a></li>
+		            <li><a href="page_Type2.html"> 项目合同信息2</a></li>
+		            <li><a href="page_Type3.html"> 项目合同信息3</a></li>
+		          </ul>
+            </li>
+            <li><a href="page_projectBudget.html"><span class="am-icon-database"></span> 维护项目预算</a></li>
           </ul>
         </li>
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-bar-chart"></span> 进度 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav2">
-            <li><a href="#" class="am-cf"><span class="am-icon-stethoscope"></span>  医院入组进度</a></li>
+            <li><a href="page_hospitalProgress.html" class="am-cf"><span class="am-icon-stethoscope"></span>  医院入组进度</a></li>
             <li><a href="#"><span class="am-icon-cny"></span> 付款进度</a></li>
             <li><a href="#"><span class="am-icon-dollar"></span> 其他费用</a></li>
             <li><a href="#"><span class="am-icon-align-center"></span> 其他进度</a></li>
@@ -349,7 +356,7 @@
 				      <span class="am-form-caret"></span>
 				    </div>
 				    
-				     <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+				    <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
 
 						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 30%;padding-left: 30px;padding-right: 30px;">保存</button>
 						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 60%;padding-left: 30px;padding-right: 30px;">取消</button>
