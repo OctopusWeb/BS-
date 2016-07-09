@@ -48,7 +48,7 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="#"><span class="am-icon-home"></span>  项目仪表板</a></li>
+        <li><a href="index.html"><span class="am-icon-home"></span>  项目仪表板</a></li>
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-folder"></span>  项目 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav1">
@@ -58,8 +58,8 @@
             	<a href="#" data-am-collapse="{target: '#collapse-nav1-1'}"><span class="am-icon-building-o"></span> 维护项目合同信息<span class="am-icon-angle-right am-fr am-margin-right"></span></a>
             	<ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav1-1">
 		            <li><a href="page_Type1.html"> 项目合同信息1</a></li>
-		            <li><a href="#"> 项目合同信息2</a></li>
-		            <li><a href="#"> 项目合同信息3</a></li>
+		            <li><a href="page_Type2.html"> 项目合同信息2</a></li>
+		            <li><a href="page_Type3.html"> 项目合同信息3</a></li>
 		          </ul>
             </li>
             <li><a href="page_projectBudget.html"><span class="am-icon-database"></span> 维护项目预算</a></li>
@@ -69,19 +69,19 @@
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-bar-chart"></span> 进度 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav2">
             <li><a href="page_hospitalProgress.html" class="am-cf"><span class="am-icon-stethoscope"></span>  医院入组进度</a></li>
-            <li><a href="#"><span class="am-icon-cny"></span> 付款进度</a></li>
-            <li><a href="#"><span class="am-icon-dollar"></span> 其他费用</a></li>
+            <li><a href="page_payProgress.html"><span class="am-icon-cny"></span> 付款进度</a></li>
+            <li><a href="page_otherFees.html"><span class="am-icon-dollar"></span> 其他费用</a></li>
             <li><a href="#"><span class="am-icon-align-center"></span> 其他进度</a></li>
-            <li><a href="#"><span class="am-icon-indent"></span> 预提调整</a></li>
-            <li><a href="#"><span class="am-icon-file-text-o"></span> 问题记录</a></li>
+            <li><a href="page_withholding.html"><span class="am-icon-indent"></span> 预提调整</a></li>
+            <li><a href="page_problemRecord.html"><span class="am-icon-file-text-o"></span> 问题记录</a></li>
           </ul>
         </li>
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-file"></span> 报表 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
           <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav3">
-            <li><a href="#" class="am-cf"><span class="am-icon-bar-chart"></span> 查看项目进度</a></li>
-            <li><a href="#"><span class="am-icon-file-archive-o"></span> 查看预提信息</a></li>
-            <li><a href="#"><span class="am-icon-copy"></span> 数据导出</a></li>
+            <li><a href="page_projectReport1.html" class="am-cf"><span class="am-icon-bar-chart"></span> 查看项目进度</a></li>
+            <li><a href="page_projectReport2.html"><span class="am-icon-file-archive-o"></span> 查看预提信息</a></li>
+            <li><a href="page_problemList.html"><span class="am-icon-copy"></span> 数据导出</a></li>
           </ul>
         </li>
         <li class="admin-parent">
@@ -120,7 +120,8 @@
 
       <div class="am-g">
         <div class="am-u-sm-12 am-u-sm-centered">
-          <table class="am-table am-table-hover am-table-striped">
+        	<h3>我的项目</h3>
+          <table class="am-table am-table-hover am-table-striped am-table-bordered table-main">
 				    <thead>
 				        <tr>
 				            <th>项目名称</th>
@@ -230,8 +231,18 @@
       </div>
     </div>
   </div>
-
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="your-modal">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">这里是标题
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+           这里会放置表格数据
+    </div>
+  </div>
 </div>
+</div>
+
 
 <a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
 
@@ -246,5 +257,24 @@
 <!--<![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
 <script src="assets/js/app.js"></script>
+<script>
+  $(function() {
+    var $modal1 = $('#your-modal')
+		
+		$('.am-table tr').click(function(){
+			$modal1.modal('toggle');
+		})
+//  $modal.siblings('.am-btn').on('click', function(e) {
+//    var $target = $(e.target);
+//    if (($target).hasClass('js-modal-open')) {
+//      $modal.modal();
+//    } else if (($target).hasClass('js-modal-close')) {
+//      $modal.modal('close');
+//    } else {
+//      $modal.modal('toggle');
+//    }
+//  });
+  });
+</script>
 </body>
 </html>

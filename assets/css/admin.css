@@ -369,3 +369,6 @@ gallery.html css
   width: 200px;
   margin: 0 auto;
 }
+
+.am-topbar-inverse{background-color: #1d4e81;}
+.am-text-primary{color:#1d4e81 ;}

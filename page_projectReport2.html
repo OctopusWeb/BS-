@@ -51,7 +51,7 @@
         <li><a href="index.html"><span class="am-icon-home"></span>  项目仪表板</a></li>
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-folder"></span>  项目 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+          <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav1">
             <li><a href="page_create.html" class="am-cf"><span class="am-icon-folder-open"></span> 创建新项目</a></li>
             <li><a href="page_projectType.html"><span class="am-icon-shield"></span> 维护项目权限</a></li>
             <li>
@@ -78,7 +78,7 @@
         </li>
         <li class="admin-parent">
           <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-file"></span> 报表 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-          <ul class="am-list am-collapse admin-sidebar-sub" id="collapse-nav3">
+          <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
             <li><a href="page_projectReport1.html" class="am-cf"><span class="am-icon-bar-chart"></span> 查看项目进度</a></li>
             <li><a href="page_projectReport2.html"><span class="am-icon-file-archive-o"></span> 查看预提信息</a></li>
             <li><a href="page_problemList.html"><span class="am-icon-copy"></span> 数据导出</a></li>
@@ -111,41 +111,71 @@
     <div class="admin-content-body">
       <div class="am-cf am-padding am-padding-bottom-0">
         <div class="am-fl am-cf">
-          <strong class="am-text-primary am-text-lg">项目合同类型选择</strong> /
-          <small>Project Contract Type</small>
+          <strong class="am-text-primary am-text-lg">项目报告1</strong> /
+          <small>Project Report1</small>
         </div>
       </div>
 
       <hr/>
 
-        <div class="am-g  am-u-lg-11" style="padding-bottom: 60px;">
-        	<form class="am-form am-form-horizontal">
+      <div class="am-g  am-u-lg-11" style="padding-bottom: 60px;">
+        	<form class="am-form am-form-horizontal">	
+        		
         		<div class="am-form-group am-form-group-sm">
-				      <label for="doc-select-1" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">项目名称 ：</label>
+				      <label for="doc-select-15" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">项目名称 ：</label>
 				      <div class="am-u-sm-9 am-u-md-9 am-u-lg-10">
-					      <select id="doc-select-1" class=" am-input-sm">
-					        <option value="option1">项目名称</option>
-					        <option value="option2">ISR</option>
-					        <option value="option3">ISR</option>
-					      </select>
-					     </div>
-				      <span class="am-form-caret"></span>
+					      <input type="text" class=" am-input-sm" id="doc-select-15">
+					    </div>
 				    </div>
-				    <div class="am-form-group am-form-group-sm">
-				      <label for="doc-select-1" class="am-u-sm-3 am-u-md-3 am-u-lg-2 am-form-label">合同类型 ：</label>
-				      <div class="am-u-sm-9 am-u-md-9 am-u-lg-10">
-					      <select id="doc-select-1" class=" am-input-sm">
-					        <option value="option1">合同类型</option>
-					        <option value="option2">ISR</option>
-					        <option value="option3">ISR</option>
-					      </select>
-					     </div>
-				      <span class="am-form-caret"></span>
-				    </div>
-				    <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
-
-						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 30%;padding-left: 30px;padding-right: 30px;">保存</button>
-						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 60%;padding-left: 30px;padding-right: 30px;">取消</button>
+        		
+						<div class="am-u-sm-12 am-u-sm-centered">
+		          <table class="am-table am-table-hover am-table-bordered table-main">
+						    <thead>
+						        <tr>
+						            <th>试验点</th>
+						            <th>受试者</th>
+						            <th>阶段 1</th>
+						            <th>阶段 2</th>
+						            <th>阶段 …</th>
+						            <th>附件</th>
+						            <th>备注</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+						            <td>0702 - Wuhan Asia Heart Hospital</td>
+						            <td>0702G013</td>
+						            <td>1/4/1</td>
+						            <td>1/4/1</td>
+						            <td>1/4/1</td>
+						            <td>附件</td>
+						            <td>备注</td>
+						        </tr>
+						        <tr>
+						            <td>0702 - Wuhan Asia Heart Hospital</td>
+						            <td>0702G013</td>
+						            <td>1/4/1</td>
+						            <td>1/4/1</td>
+						            <td>1/4/1</td>
+						            <td>附件</td>
+						            <td>备注</td>
+						        </tr>
+						        <tr>
+						            <td>0702 - Wuhan Asia Heart Hospital</td>
+						            <td>0702G013</td>
+						            <td>1/4/1</td>
+						            <td>1/4/1</td>
+						            <td>1/4/1</td>
+						            <td>附件</td>
+						            <td>备注</td>
+						        </tr>
+						    </tbody>
+						  </table>
+		       </div>
+		        
+		        
+						
+						<button type="button" class="am-btn am-btn-primary" style="position:absolute;left: 40%;padding-left: 30px;padding-right: 30px;">导出报表</button>
         	</form>
       </div>
     </div>
